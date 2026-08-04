@@ -1,3 +1,4 @@
+import Link from "next/link";
 const CodeCell = ({ children }: { children: string }) => {
   const highlightCode = (code: string) => {
     const keywords = /\b(import|from|for|in|if|else|return|def|as)\b/g;
@@ -165,6 +166,12 @@ export default function DataPreparationSalesAnalysis() {
     <main className="min-h-screen bg-[#F8F7F3] text-neutral-900">
 
       <div className="mx-auto max-w-5xl px-6 py-20">
+        <Link
+  href="/"
+  className="inline-flex items-center mb-12 rounded-full border border-gray-300 px-5 py-2 text-sm font-medium text-gray-700 transition hover:bg-black hover:text-white"
+>
+  ← Back to Home
+</Link>
 
         {/* HEADER */}
 
