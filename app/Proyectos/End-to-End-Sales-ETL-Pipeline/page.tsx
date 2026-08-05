@@ -118,31 +118,32 @@ structured database.
 
 
 
-<div className="mt-8 flex flex-wrap justify-center gap-2">
+<div className="mt-8 flex flex-col items-center gap-6">
+  <div className="flex flex-wrap justify-center gap-2">
+    {[
+      "Python",
+      "Pandas",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "ETL",
+    ].map((tech) => (
+      <span
+        key={tech}
+        className="rounded-full border border-gray-300 px-4 py-2 text-sm"
+      >
+        {tech}
+      </span>
+    ))}
+  </div>
 
-
-{
-[
-"Python",
-"Pandas",
-"PostgreSQL",
-"SQLAlchemy",
-"ETL"
-].map((tech)=>(
-
-<span
-key={tech}
-className="rounded-full border border-gray-300 px-4 py-2 text-sm"
->
-
-{tech}
-
-</span>
-
-))
-}
-
-
+  <Link
+    href="https://github.com/Juan-Barrios99/Portfolio"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center rounded-full bg-black px-6 py-3 text-sm font-medium text-white transition hover:bg-neutral-800"
+  >
+    🚀 View Source Code on GitHub
+  </Link>
 </div>
 
 
