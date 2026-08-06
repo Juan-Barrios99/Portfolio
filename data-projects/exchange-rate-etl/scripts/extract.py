@@ -31,5 +31,9 @@ data = response.json()
 
 import json
 
+import os
+
+os.makedirs("data", exist_ok=True)
+
 with open("data/raw_rates.json", "w") as file:
     json.dump(data, file, indent=4)

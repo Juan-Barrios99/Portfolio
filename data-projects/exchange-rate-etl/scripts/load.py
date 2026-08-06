@@ -10,6 +10,9 @@ with open("data/raw_rates.json", "r") as file:
 
 df = transform_data(data)
 
+import os
+
+os.makedirs("data", exist_ok=True)
 
 df.to_csv("data/processed_rates.csv", index=False)
 
