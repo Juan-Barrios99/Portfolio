@@ -5,3 +5,4 @@ __pycache__/
 
 data/raw_rates.json
 data/processed_rates.csv
+.env

@@ -1,3 +1,4 @@
+import json
 import pandas as pd
 
 
@@ -24,3 +25,23 @@ def transform_data(data):
     )
 
     return df
+
+
+# Leer datos extraídos
+with open("data/raw_rates.json", "r") as file:
+    data = json.load(file)
+
+
+# Transformar
+df = transform_data(data)
+
+
+# Guardar CSV procesado
+df.to_csv(
+    "data/processed_rates.csv",
+    index=False
+)
+
+
+print("Transformación completada.")
+print(df)

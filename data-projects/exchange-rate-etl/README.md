@@ -1,6 +1,6 @@
 # Exchange Rate ETL
 
-A simple ETL (Extract, Transform, Load) pipeline built with Python that retrieves the latest exchange rates from the Frankfurter API, transforms the data using Pandas, and saves the processed data as a CSV file.
+A simple ETL (Extract, Transform, Load) pipeline built with Python that retrieves the latest exchange rates from the Frankfurter API, transforms the data using Pandas, inserts the records into PostgreSQL and saves the processed data as a CSV file.
 
 ## Technologies
 
@@ -8,6 +8,7 @@ A simple ETL (Extract, Transform, Load) pipeline built with Python that retrieve
 * Requests
 * Pandas
 * REST API
+* PostgreSQL
 * JSON
 * CSV
 
@@ -50,4 +51,7 @@ After execution, the processed file will be generated at:
 
 ```text
 data/processed_rates.csv
+```
+```text
+PostgreSQL → exchange_rates table
 ```
