@@ -1,32 +1,40 @@
-Exchange Rate ETL
+#Exchange Rate ETL
 
-ETL pipeline built with Python that extracts currency exchange rates from the Frankfurter API, transforms the data with Pandas, and saves the result as a CSV.
+A simple ETL (Extract, Transform, Load) pipeline built with Python that retrieves the latest exchange rates from the Frankfurter API, transforms the data using Pandas, and saves the processed data as a CSV file.
 
-Pipeline
-API → Extract → Transform → Load → CSV
+##Technologies
+Python
+Requests
+Pandas
+REST API
+JSON
+CSV
 
-Technologies:
--Python
--Requests
--Pandas
--REST API
--JSON / CSV
+##How to Run
 
-Project Structure:
+Clone the repository:
 
-exchange-rate-etl/
-├── data/
-├── scripts/
-│   ├── extract.py
-│   ├── transform.py
-│   └── load.py
-├── .gitignore
-└── README.md
+git clone https://github.com/Juan-Barrios99/Portafolio.git
 
-Run:
-python scripts/extract.py
-python scripts/load.py
+Navigate to the project directory:
 
-Output:
+cd Portafolio/data-projects/exchange-rate-etl
+
+Create and activate a virtual environment (Windows):
+
+python -m venv venv
+venv\Scripts\activate
+
+Install the dependencies:
+
+pip install -r requirements.txt
+
+Run the ETL pipeline:
+
+python main.py
+
+##Output
+
+After execution, the processed file will be generated at:
 
 data/processed_rates.csv
