@@ -109,7 +109,52 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-10 items-stretch">
 
 
+          {/* DATA ENGINEERING PROJECT */}
 
+<Link
+  href="/Proyectos/Data-engineering"
+  className="h-full"
+>
+  <article className="bg-white border-l-4 border-emerald-600 rounded-xl p-8 hover:shadow-xl transition cursor-pointer h-full">
+
+    <h4 className="text-3xl font-bold mb-3 text-black">
+      Data Engineering
+    </h4>
+
+    <p className="text-lg uppercase tracking-widest text-emerald-700 font-semibold mb-5">
+      AUTOMATED ETL Pipeline
+    </p>
+
+    <p className="text-gray-600 text-justify">
+      This project demonstrates an automated end-to-end ETL pipeline that extracts 
+      daily exchange rates from a public API, transforms and validates the data using
+       Python and Pandas, exports processed data to CSV, and loads historical records 
+       into PostgreSQL using SQLAlchemy. The pipeline is automatically scheduled using
+        Windows Task Scheduler.
+    </p>
+
+    <div className="flex flex-wrap gap-2 mt-6">
+
+      <span className="bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full text-sm">
+        Python
+      </span>
+
+      <span className="bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full text-sm">
+        PostgreSQL
+      </span>
+
+      <span className="bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full text-sm">
+        ETL
+      </span>
+
+      <span className="bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full text-sm">
+        SQL
+      </span>
+
+    </div>
+
+  </article>
+</Link>
 
 
            
